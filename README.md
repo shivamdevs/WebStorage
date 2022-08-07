@@ -14,7 +14,7 @@ const storage = new WebStorage( key , location );
 ```
 If storage key doesn't exists, new storage key will be formed. And if the key already exists it will overlap existing properties.\
 \
-Note: Storage key will be addressed as storage from here onwards.
+> Note: Storage key will be addressed as storage from here onwards.
 
 ## Usage and methods
 
@@ -55,11 +55,11 @@ storage.remove( key );
 
 ### onchange
 Triggers when there is a change in value of keys.\
-Warning: Triggers for all keys at once.
 ```javascript
 storage.onchange( callback );
 // on callback ( key , oldvalue , newvalue ) will be passed to function as arguments
 ```
+> Warning: Triggers for all keys at once.
 
 ### delete
 Delete the storage from localStorage or sessionStorage.
