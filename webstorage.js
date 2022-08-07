@@ -1,3 +1,6 @@
+// Projset - WebStorage
+// Version - 1.3.1
+// MIT license
 class WebStorage {
   constructor( name , location ) {
 
@@ -82,7 +85,7 @@ class WebStorage {
     },
   ];
   onchange( callback ) {
-    if ( Is.function( callback ) ) this.onchangeevents.push( callback );
+    if ( callback && typeof callback === 'function' ) this.onchangeevents.push( callback );
     return this;
   }
   remove( key ) {
